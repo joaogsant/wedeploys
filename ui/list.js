@@ -20,8 +20,8 @@ WeDeploy
 function appendTickets(tickets) {
 	var ticketsList = '';
 
-	tickets.forEach(function(task) {
-		ticketsList += `<input type="text" value="${tickets.name}" readonly/>`;
+	tickets.forEach(function(ticket) {
+		ticketsList += `<input type="text" value="${ticket.name}" readonly/>`;
 	});
 
 	list.innerHTML = ticketsList;
