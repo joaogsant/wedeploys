@@ -7,9 +7,9 @@ WeDeploy
     .data('db-takeaturn.wedeploy.io')
     .orderBy('id', 'desc')
     .limit(5)
-    .get('tasks')
+    .get('tickets')
     .then(function(response) {
-        appendTasks(response);
+        appendTickets(response);
     })
     .catch(function(error) {
         console.error(error);
@@ -17,12 +17,12 @@ WeDeploy
 
 // Insert fetch data method above
 
-function appendTasks(tasks) {
-	var taskList = '';
+function appendTickets(tickets) {
+	var ticketsList = '';
 
-	tasks.forEach(function(task) {
-		taskList += `<input type="text" value="${task.name}" readonly>`;
+	tickets.forEach(function(task) {
+		ticketsList += `<input type="text" value="${tickets.name}" readonly>`;
 	});
 
-	list.innerHTML = taskList;
+	list.innerHTML = ticketsList;
 }

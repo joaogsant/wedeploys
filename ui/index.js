@@ -7,7 +7,7 @@ form.addEventListener('submit', function(e) {
 
 WeDeploy
     .data('db-takeaturn.wedeploy.io')
-    .create('tasks', {name: form.item.value })
+    .create('tickets', {name: form.item.value })
     .then(function(response) {
         form.reset();
         form.item.focus();
