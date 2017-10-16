@@ -1,0 +1,6 @@
+[
+	{
+		"path": "/tickets/*",
+		"data": true
+	}
+]
